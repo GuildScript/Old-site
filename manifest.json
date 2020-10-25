@@ -1,5 +1,5 @@
 {
-  "short_name": "Guilded.js",
+  "short_name": "GuildScript",
   "name": "A discord.js-like client for Guilded.",
   "icons": [
     {
@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "./guilded-site",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
