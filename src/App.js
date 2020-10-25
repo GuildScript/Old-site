@@ -7,7 +7,7 @@ function App() {
         <div className="App">
             <Header />
             <div id="content">
-                <Content file={`${process.env.PUBLIC_URL}/index.md`} />
+                <Content file={getPage()} />
             </div>
         </div>
     );
@@ -63,4 +63,11 @@ function Header() {
         </div>
     )
 }
+
+function getPage() {
+    const params = new URLSearchParams(window.location.search);
+    let url = params.get('page') || `index.md`
+    url = process.env.PUBLIC_URL + '/' + url;
+    return url;
+};
 export default App;
