@@ -4,6 +4,8 @@ object-assign
 @license MIT
 */
 
+/*! showdown v 1.9.1 - 02-11-2019 */
+
 /** @license React v0.20.1
  * scheduler.production.min.js
  *
