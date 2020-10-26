@@ -1,6 +1,8 @@
 import './App.css';
 import React from 'react';
 import MD from 'react-showdown';
+import hljs from "highlight.js";
+import 'highlight.js/styles/solarized-dark.css';
 
 function App() {
     return (
@@ -37,10 +39,17 @@ class Content extends React.Component {
         })
     }
 
+    componentDidUpdate() {
+        document.querySelectorAll("pre code").forEach(block => {
+            hljs.highlightBlock(block);
+        });
+
+    }
+
     render() {
         return (
             <MD
-                markdown={this.state.value} />
+                markdown={this.state.value} options={{ ghCodeBlocks: true }} />
         )
     }
 }
