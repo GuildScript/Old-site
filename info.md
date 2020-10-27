@@ -25,7 +25,8 @@ client.on('ready' () => {
 });
 
 client.on('message' () => {
-    // TODO: finish this when we finish the content loader.
+    let content = message.content.toString();
+    if(content === '!ping') message.channel.send('pong!');
 });
 
 client.login('email', 'username');
