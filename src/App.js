@@ -33,6 +33,9 @@ class Content extends React.Component {
     }
 
     async update() {
+        this.setState({
+            value: 'Loading...'
+        })
         let value
         try {
             let data = await fetch(getPage());
