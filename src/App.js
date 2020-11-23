@@ -43,7 +43,10 @@ class Content extends React.Component {
             else value = await data.text();
         }
         catch (e) {
-            value = `Error loading page! ${e}`
+            if (navigator.onLine)
+                value = `Error loading page! ${e}`
+            else
+                value = 'This page does not appear to be cached! Please connect to the internet and try again.'
         }
         this.setState({
             value

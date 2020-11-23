@@ -1,7 +1,7 @@
 function Left() {
     return (
         <div className="logo">
-            <a href={process.env.PUBLIC_URL+ '#'} className="noLink">
+            <a href={process.env.PUBLIC_URL + '#'} className="noLink">
                 <button>GuildScript</button>
             </a>
         </div>
