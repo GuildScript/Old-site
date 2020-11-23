@@ -1,6 +1,7 @@
 {
+    "name": "GuildScript",
     "short_name": "GuildScript",
-    "name": "A discord.js-like client for Guilded.",
+    "description": "A discord.js-like client for Guilded.",
     "icons": [
         {
             "src": "favicon.ico",
